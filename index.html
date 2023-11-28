@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" />
+</head>
+
+<body>
+    <div class="screen">
+        <div class="container">
+            <div class="cover-image">
+                <div class="register-text">
+                    <hr>
+                    <h2>Register now</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="form-group">
+                <form action="" class="register" name="myform" onsubmit= "return validateForm()">
+                    <div id="name">
+                        <input type="text" name="fname" id="fname" placeholder="Name" patter="[A-Z][a-z]" required  maxlength="50"><b><span class="form-error"></span></b>
+                    </div>
+                    <hr>
+                    <div id="email">
+                        <input type="email" name="femail" id="femail" placeholder="Email" required><b><span class="form-error"></span></b>
+                    </div>
+                    <hr>
+                    <div class="phone">
+                        <input type="tel" name="fphone" id="fphone" placeholder="Phone" pattern="[0-9]{10}" maxlength="10" required><b><span class="form-error"></span></b>
+                    </div>
+                    <hr>
+                    <div class="Id">
+                        <input type="text" name="fId" id="fId" placeholder="BITS ID" maxlength="13" required pattern="20[0-9]{2}[A-Z]{1}[0-9]{1}[A-Z]{2}[0-9]{4}P"><span class="form-error"><b></b></span>
+                    </div>
+                    <hr>
+                    <div class="hostel-select" id="hostel-select">
+                        <label for="hostel">Hostel:</label>
+                        <select name="hostel" id="hostel" required>
+                            <option value="none">-Select-your-hostel-</option>
+                            <option value="Ashok">Ashok</option>
+                            <option value="Budh">Budh</option>
+                            <option value="Gandhi">Gandhi</option>
+                            <option value="Krishna">Krishna</option>
+                            <option value="Meera">Meera</option>
+                            <option value="Rana Pratap">Rana Pratap</option>
+                            <option value="Shankar">Shankar</option>
+                            <option value="Shreeniwas Ramanujan">Shreeniwas Ramanujan</option>
+                            <option value="Vishwakarma">Vishwakarma</option>
+                            <option value="Vyas">Vyas</option>
+                        </select>
+                        <b><span class="form-error"></span></b>
+                        <hr>
+                    </div>
+                    <div class="radio-select">
+                        <p>Size:</p>
+                        <input type="radio" id="S" name="size" value="S" required>
+                        <label for="S">S</label>
+                        <input type="radio" name="size" id="M" value="M">
+                        <label for="M">M</label>
+                        <input type="radio" name="size" id="L" value="L">
+                        <label for="L">L</label>
+                        <input type="radio" name="size" id="XL" value="XL">
+                        <label for="XL">XL</label>
+                    </div>
+                    <hr>
+                    <div class="check">
+                        <input type="checkbox" name="terms" id="terms" value="terms" required>
+                        <label for="terms">I Agree with the <a href="#">Terms and Conditions</a></label>
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
